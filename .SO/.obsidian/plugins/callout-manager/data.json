@@ -43,6 +43,14 @@
             "color": "2, 122, 255"
           }
         }
+      ],
+      "important": [
+        {
+          "changes": {
+            "icon": "lucide-list",
+            "color": "168, 130, 255"
+          }
+        }
       ]
     }
   },

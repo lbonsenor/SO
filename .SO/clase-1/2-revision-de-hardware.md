@@ -8,10 +8,11 @@
 >
 > Cada procesador tiene su conjunto de instrucciones
 
-<details> 
-<summary>Flags en 32-bit</summary>
+<details>
+<summary><code>Flags en 32-bit</code></summary>
 
 ![alt text](https://raw.githubusercontent.com/K0deless/k0deless.github.io/master/assets/img/introduction-re/32-bit-eflags.jpeg)
+
 | Bit # | Mask          | Abbv.  | Name                                                                                                  | `=1`                                                                                                         | `=0`                                                                                                           | Description                                                                                         |
 | ----- | ------------- | ------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | 0     | `0x0001`      | `CF`   | [Carry flag](https://en.wikipedia.org/wiki/Carry_flag)                                                | CY (Carry)                                                                                                   | NC (No Carry)                                                                                                  | Indica si hubo acarreo en una operación aritmética.                                                 |
@@ -35,5 +36,76 @@
 | 19    | `0x0008 0000` | `VIF`  | [Virtual interrupt flag](https://en.wikipedia.org/wiki/Virtual_8086_mode#VME "Virtual 8086 mode")     |                                                                                                              |                                                                                                                | Indica el estado virtual de interrupciones.                                                         |
 | 20    | `0x0010 0000` | `VIP`  | [Virtual interrupt pending](https://en.wikipedia.org/wiki/Virtual_8086_mode#VME)                      |                                                                                                              |                                                                                                                | Indica si hay interrupciones virtuales pendientes.                                                  |
 | 21    | `0x0020 0000` | `ID`   | Able to use [CPUID](https://en.wikipedia.org/wiki/CPUID "CPUID") instruction                          |                                                                                                              |                                                                                                                | Permite la detección de CPUID en procesadores modernos.                                             |
+
 </details>
 
+> [!TIP]
+>
+> ## Multithreading
+>
+> Mantener el estado de 2 threads e intercambiar entre ellos rápidamente cuando sea necesario. No es paralelismo
+
+> [!TIP]
+>
+> ## Multicore
+>
+> Replicar los núcleos independientes. Pueden soportar múltiples threads
+
+> [!IMPORTANT]
+>
+> ## Memoria
+>
+> Idealmente, la memoria debe ser:
+>
+> - **Rápida** (más que la ejecución de una instrucción)
+> - **Grande** (para albergar a todos los procesos juntos)
+> - **Barata**
+
+| Jerarquía                | Capacidad Típica | Tiempo de Acceso | Ejemplos de cache                    |
+| ------------------------ | ---------------- | ---------------- | ------------------------------------ |
+| Registros                | <1 KB            | 1 ns             | Cuándo guardar                       |
+| Cache (SRAM)             | 4 MB             | 2 ns             | Dónde guardar                        |
+| Memoria Principal (DRAM) | 1-8 GB           | 10 ns            | Qué entrada eliminar si hace falta   |
+| Disco Sólido             | 500 GB           | 25 µs            | Dónde guardarlo en memoria principal |
+| Disco Magnético          | 1-4 TB           | 10 ms            | Dónde guardarlo en memoria principal |
+
+> [!IMPORTANT]
+>
+> ## Disco
+>
+> Dada una posición de los cabezales, cada cabezal puede leer un **track**, todos los **tracks** forman un **cylinder**
+>
+> Cada **track** esta dividido en **sectors**
+
+<details>
+<summary><code>Estructura de un Disco Mecánico</code></summary>
+
+![alt text](https://www.computersciencejunction.in/wp-content/uploads/2022/09/disk-structure-in-os.jpg)
+
+</details>
+
+> [!IMPORTANT]
+>
+> ## Dispositivos I/O
+>
+> Hay **tres** formas de I/O
+>
+> 1. `Busy waiting`: Una consulta constante de finalización de una instrucción, suele ser bastante ineficiente
+> 2. `Interrupción`
+> 3. `DMA (Direct Memory Access)`: Transfiere datos entre hardwares sin la necesidad de un CPU
+
+> [!TIP]
+>
+> ## Boot
+>
+> La **placa madre** posee un programa llamado **BIOS** *(Basic I/O System)* Flash RAM, no volátil pero actualizable por el **SO**
+>
+> La **BIOS** posee instrucciones para interactuar con la **pantalla, teclado, y disco**
+>
+> 1. Chequea cuánta memoria tenemos y si ciertos dispositivos como el teclado están instalados y responden correctamente.
+> 2. Escanea buses PCIe y PCI en busca de dispositivos instalados.
+> 3. Determina el dispositivo de boot.
+> 4. Se carga el primer sector en memoria y se ejecuta
+> 5. Este sector suele leer una tabla de particiones y se se carga un segundo sector
+> 6. Se carga en memoria el SO y se ejecuta.
+> 7. El SO consulta a la BIOS los dispositivos conectados
