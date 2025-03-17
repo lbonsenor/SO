@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "clase-1/2-revision-de-hardware.md",
+                "file": "clase-1/3-syscalls.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2-revision-de-hardware"
+              "title": "3-syscalls"
             }
           }
         ]
@@ -168,6 +168,8 @@
   },
   "active": "3c3259b55e1c71f5",
   "lastOpenFiles": [
+    "clase-1/2-revision-de-hardware.md",
+    "clase-1/3-syscalls.md",
     "clase-1/1-introduccion.md",
     "clase-1.md",
     "latex/bibliography.bib",
