@@ -48,3 +48,4 @@
 > - `sem_init(sem_t *sem, int pshared,, unsigned int value)`: Inicializa el semaforo apuntado en `sem`
 >   - `pshared` Indica si el semáforo va a ser compartido entre los threads de un proceso o entre procesos
 >   - Retorna `-1` en caso de error y setea `errno`, en caso contrario, retorna `0`
+
