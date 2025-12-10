@@ -1,0 +1,1 @@
+El First-Come First-Served es un algoritmo de scheduling en los batch systems muy similar a una cola tradicional. Es non-preemptive, y los procesos bloqueados van al final. En este sistema, si tenemos este algoritmo estamos siempre obligados a atender casi siempre al CPU-bound, porque los otros van a estar casi siempre bloqueados.

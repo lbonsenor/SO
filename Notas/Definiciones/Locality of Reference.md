@@ -1,0 +1,1 @@
+La cercanía de las referencias tiene que ver con que referencias que ocurren en una ventana de tiempo acotada, acceden a un conjunto acotado de páginas. Si estamos accediendo a una zona de un arreglo, en instrucciones previas y posteriores se acceden a otras zonas cercanas.

@@ -1,0 +1,1 @@
+**Multicore** consiste en replicar los núcleos independientes. Un sistema multicore puede soportar **multiples threads**

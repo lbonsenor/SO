@@ -1,0 +1,1 @@
+Mantiene el estado de 2 [[Thread|threads]] e intercambia entre ellos rápidamente cuando sea necesario

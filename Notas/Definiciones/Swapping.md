@@ -1,0 +1,1 @@
+El **swapping** consiste en guardar toda la memoria del proceso en disco y restaurarla cuando vuelva a ejecutar.  Esto es muy difícil de escalar

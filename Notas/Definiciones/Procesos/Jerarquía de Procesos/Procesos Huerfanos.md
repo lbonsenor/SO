@@ -1,0 +1,1 @@
+Son los que por ejemplo tenían un padre al que le llegó una señal de kill

@@ -1,0 +1,1 @@
+La **shell** es un intérprete de comandos. Es un proceso como todos los demás, no tiene ningún privilegio extra. La diferencia es que puede llamar a otros procesos y ejecutarlos.

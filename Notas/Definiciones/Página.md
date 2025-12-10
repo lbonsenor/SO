@@ -1,0 +1,1 @@
+Una **página** es un conjunto contiguo de direcciones y es mapeada a memoria física. Cuando se desaloja una página y luego se vuelve a traer, esta puede cambiar el mapeo de direcciones

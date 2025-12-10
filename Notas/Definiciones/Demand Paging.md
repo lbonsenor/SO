@@ -1,0 +1,1 @@
+La cantidad de páginas que tiene un proceso justo antes de comenzar a ejecutar es cero, por lo que se van cargando a medida que sean necesarias mediante los page fault.

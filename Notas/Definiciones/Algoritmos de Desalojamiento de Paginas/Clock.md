@@ -1,0 +1,1 @@
+Consiste en una modificación del [[Second Chance]]. En este caso, se ahorra modificar constantemente la lista. Se hace circular la lista de este último algoritmo y se tiene un puntero que la va recorriendo.

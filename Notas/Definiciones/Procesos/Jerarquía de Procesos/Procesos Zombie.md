@@ -1,0 +1,1 @@
+Los **procesos zombies** son procesos que están muertos porque el proceso ya terminó pero el padre todavía no les hizo wait.

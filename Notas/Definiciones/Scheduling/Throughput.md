@@ -1,0 +1,1 @@
+La cantidad de tareas completadas por unidad de tiempo

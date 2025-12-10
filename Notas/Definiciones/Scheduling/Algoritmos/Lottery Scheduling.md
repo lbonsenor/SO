@@ -1,0 +1,1 @@
+En los sistemas interactivos también tenemos el **lottery scheduling** donde se sortea el acceso al CPU. Cada proceso tiene tickets de “lotería” para diferentes recursos. Si un proceso tiene más tickets, tiene más chances de ganar.

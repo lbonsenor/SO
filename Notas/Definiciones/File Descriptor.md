@@ -1,0 +1,1 @@
+Los sistemas UNIX usan enteros para trackear los archivos abiertos llamados **file descriptors** (fd). pueden referirse a: archivos en disco, pipes, sockets, terminales, etc.

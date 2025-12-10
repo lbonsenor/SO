@@ -1,0 +1,1 @@
+Es un tipo de cache en la MMU que guarda traducciones recientes de direcciones virtuales a físicas. Hay una por nucleo
