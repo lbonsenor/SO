@@ -1,0 +1,1 @@
+Es una tecnología que le permite a un solo núcleo del CPU actuar como 2, lo cual mejora la performance procesando dos conjuntos de instrucciones al mismo tiempo
