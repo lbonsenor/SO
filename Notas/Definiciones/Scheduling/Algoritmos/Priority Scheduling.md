@@ -1,4 +1,4 @@
-[[Definiciones/Scheduling/Algoritmos/Round-Robin]] asume que todos los procesos son igualmente importantes. 
+[[Definiciones/Scheduling/Algoritmos/Round-Robin|Round Robin]] asume que todos los procesos son igualmente importantes. 
 
 El algoritmo **Priority Scheduling** asigna prioridades a los procesos, y aquellos que tienen la mayor son elegidos primero. 
 

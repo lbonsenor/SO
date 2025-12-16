@@ -1,1 +1,1 @@
-Es una version preemptive de [[Definiciones/Scheduling/Algoritmos/Shortest Job First]], que consiste en elegir el proceso que menos tiempo de ejecución le queda. Al llegar un nuevo trabajo, se compara su tiempo restante (total) con el restante del trabajo actual.
+Es una version preemptive de [[Definiciones/Scheduling/Algoritmos/Shortest Job First|Shortest Job First]], que consiste en elegir el proceso que menos tiempo de ejecución le queda. Al llegar un nuevo trabajo, se compara su tiempo restante (total) con el restante del trabajo actual.
